@@ -79,6 +79,14 @@ const routes: Routes = [
     path: 'grafico-year',
     loadChildren: () => import('./grafico-year/grafico-year.module').then( m => m.GraficoYearPageModule)
   },
+  {
+    path: 'mod-prod',
+    loadChildren: () => import('./mod-prod/mod-prod.module').then( m => m.ModProdPageModule)
+  },
+  {
+    path: 'mod-gasto',
+    loadChildren: () => import('./mod-gasto/mod-gasto.module').then( m => m.ModGastoPageModule)
+  },
 ];
 
 @NgModule({
